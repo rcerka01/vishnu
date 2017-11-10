@@ -14,9 +14,8 @@ function listEventStatusUrl(apiKey, eventId) {
 module.exports = { run: function(app) { 
 
         app.get("/api/listEventStatus/:eventId", function(req, res) {
-            console.log(listEventStatusUrl(config.user.apiKey, req.params.eventid));
             request 
-                .get(listEventStatusUrl(config.user.apiKey, req.params.eventid))
+                .get(listEventStatusUrl(config.user.apiKey, req.params.eventId))
                 .on('error', function(err) {
                     console.log("Error to retrieve game stats: " + err)
                 })
