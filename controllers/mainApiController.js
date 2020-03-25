@@ -2,13 +2,19 @@ var config = require("../config/config");
 var request = require("request");
 
 function listEventStatusUrl(apiKey, eventId) { 
-    return "https://www.betfair.com/inplayservice/v1/eventDetails"
+    return "https://ips.betfair.com/inplayservice/v1/scores"
     + "?_ak=" + apiKey
-    + "&alt=json" 
+    + "&alt=json"
     + "&eventIds=" + eventId 
-    + "&locale=en_GB"
-    + "&productType=EXCHANGE"
-    + "&regionCode=UK"
+    + "&locale=en"
+    
+ //   "https://www.betfair.com/inplayservice/v1/eventDetails"
+ //   + "?_ak=" + apiKey
+ //   + "&alt=json" 
+ //   + "&eventIds=" + eventId 
+ //   + "&locale=en_GB"
+ //   + "&productType=EXCHANGE"
+ //   + "&regionCode=UK"
 }
 
 module.exports = { run: function(app) { 
