@@ -7,14 +7,6 @@ function listEventStatusUrl(apiKey, eventId) {
     + "&alt=json"
     + "&eventIds=" + eventId 
     + "&locale=en"
-    
- //   "https://www.betfair.com/inplayservice/v1/eventDetails"
- //   + "?_ak=" + apiKey
- //   + "&alt=json" 
- //   + "&eventIds=" + eventId 
- //   + "&locale=en_GB"
- //   + "&productType=EXCHANGE"
- //   + "&regionCode=UK"
 }
 
 module.exports = { run: function(app) { 
