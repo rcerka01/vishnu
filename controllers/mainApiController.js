@@ -10,9 +10,7 @@ function listEventStatusUrl(apiKey, eventId) {
 }
 
 module.exports = { run: function(app) { 
-
-    //lkmklkl
-
+    
         app.get("/api/listEventStatus/:eventId", function(req, res) {
             request 
                 .get(listEventStatusUrl(config.user.apiKey, req.params.eventId))
